@@ -41,7 +41,7 @@ def main(_):
     _ = tf.scalar_summary('accuracy', accuracy)
   # Merge all the summaries and write them out to /tmp/mnist_logs
   merged = tf.merge_all_summaries()
-  writer = tf.train.SummaryWriter('/tmp/mnist_logs', sess.graph_def)
+  writer = tf.train.SummaryWriter('tensorflow/models/image/mnist', sess.graph_def)
   tf.initialize_all_variables().run()
   # Train the model, and feed in test data and record summaries every 10 steps
   for i in range(FLAGS.max_steps):

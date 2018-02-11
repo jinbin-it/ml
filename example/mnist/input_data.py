@@ -132,10 +132,10 @@ def read_data_sets(train_dir, fake_data=False, one_hot=False, dtype=tf.float32):
     data_sets.validation = fake()
     data_sets.test = fake()
     return data_sets
-  TRAIN_IMAGES = '/tensorflow/models/image/mnist/train-images-idx3-ubyte.gz'
-  TRAIN_LABELS = '/tensorflow/models/image/mnist/train-labels-idx1-ubyte.gz'
-  TEST_IMAGES = '/tensorflow/models/image/mnist/t10k-images-idx3-ubyte.gz'
-  TEST_LABELS = '/tensorflow/models/image/mnist/t10k-labels-idx1-ubyte.gz'
+  TRAIN_IMAGES = 'tensorflow/models/image/mnist/train-images-idx3-ubyte.gz'
+  TRAIN_LABELS = 'tensorflow/models/image/mnist/train-labels-idx1-ubyte.gz'
+  TEST_IMAGES = 'tensorflow/models/image/mnist/t10k-images-idx3-ubyte.gz'
+  TEST_LABELS = 'tensorflow/models/image/mnist/t10k-labels-idx1-ubyte.gz'
   VALIDATION_SIZE = 5000
   train_images = extract_images(TRAIN_IMAGES)
   train_labels = extract_labels(TRAIN_LABELS, one_hot=one_hot)

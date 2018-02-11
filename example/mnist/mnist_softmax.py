@@ -4,7 +4,7 @@ from __future__ import print_function
 # Import data
 from tensorflow.examples.tutorials.mnist import input_data
 import tensorflow as tf
-mnist = input_data.read_data_sets("/tensorflow/models/image/mnist", one_hot=True)
+mnist = input_data.read_data_sets("tensorflow/models/image/mnist", one_hot=True)
 sess = tf.InteractiveSession()
 # Create the model
 x = tf.placeholder(tf.float32, [None, 784])
